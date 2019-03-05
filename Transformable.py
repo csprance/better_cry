@@ -47,7 +47,6 @@ class Transformable(object):
         general.set_rotation(self.name, x, y, z)
 
     @property
-    @restore_selection
     def bounding_box(self):
         general.clear_selection()
         general.select_object(self.name)
